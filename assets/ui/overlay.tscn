@@ -16,7 +16,7 @@ margin_right = 1251.0
 margin_bottom = 175.0
 rect_min_size = Vector2( 500, 50 )
 text = "
-Controls: WASD to move,  Space to jump,  R to reset,  Shift to walk,  T to toggle isometric controls,  C to view cube demo,  Tab to toggle hints.
+Controls: WASD to move,  Space to jump,  R to reset,  Shift to walk,  T to toggle isometric controls, Tab to toggle hints.
 
 UIOJKL to change view mode.  U = Forty Five deg,   I = Isometric,
 O = Top Down,   J = Front Side,   K = Oblique Y,   L = Oblique Z

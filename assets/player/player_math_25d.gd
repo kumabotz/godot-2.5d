@@ -10,11 +10,6 @@ func _process(delta):
 	if Input.is_action_pressed("exit"):
 		get_tree().quit()
 
-	if Input.is_action_just_pressed("view_cube_demo"):
-		#warning-ignore:return_value_discarded
-		get_tree().change_scene("res://assets/cube/cube.tscn")
-		return
-
 	if Input.is_action_just_pressed("toggle_isometric_controls"):
 		isometric_controls = not isometric_controls
 	if Input.is_action_just_pressed("reset_position"):
