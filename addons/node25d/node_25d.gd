@@ -36,9 +36,9 @@ func _process(_delta):
 func Node25D_ready():
 	_spatial_node = get_child(0)
 	# Changing the values here will change the default for all Node25D instances.
-	_basisX = SCALE * Vector2(1, 0)
-	_basisY = SCALE * Vector2(0, -0.70710678118)
-	_basisZ = SCALE * Vector2(0, 0.70710678118)
+	_basisX = SCALE * Vector2(0.86602540378, 0.5)
+	_basisY = SCALE * Vector2(0, -1)
+	_basisZ = SCALE * Vector2(-0.86602540378, 0.5)
 
 
 # Call this method in _process, or whenever the position of this object changes.
