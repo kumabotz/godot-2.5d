@@ -3,15 +3,12 @@ extends KinematicBody
 class_name PlayerMath25D # No icon necessary
 
 var vertical_speed := 0.0
-var isometric_controls := true
 onready var _parent_node25d: Node25D = get_parent()
 
 func _process(delta):
 	if Input.is_action_pressed("exit"):
 		get_tree().quit()
 
-	if Input.is_action_just_pressed("toggle_isometric_controls"):
-		isometric_controls = not isometric_controls
 	if Input.is_action_just_pressed("reset_position"):
 		transform = Transform(Basis(), Vector3.UP * 10)
 		vertical_speed = 0
@@ -25,7 +22,7 @@ func _horizontal_movement(delta):
 	var localX = Vector3.RIGHT
 	var localZ = Vector3.BACK
 
-	if isometric_controls and is_equal_approx(Node25D.SCALE * 0.86602540378, _parent_node25d.get_basis()[0].x):
+	if is_equal_approx(Node25D.SCALE * 0.86602540378, _parent_node25d.get_basis()[0].x):
 		localX = Vector3(0.70710678118, 0, -0.70710678118)
 		localZ = Vector3(0.70710678118, 0, 0.70710678118)
 
