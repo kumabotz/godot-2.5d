@@ -10,7 +10,7 @@
 extents = Vector3( 0.5, 1, 0.5 )
 
 [node name="Player25D" type="Node2D"]
-position = Vector2( 0, -226.274 )
+position = Vector2( 0, -320 )
 z_index = 100
 script = ExtResource( 1 )
 __meta__ = {
@@ -29,7 +29,6 @@ __meta__ = {
 }
 
 [node name="PlayerSprite" type="Sprite" parent="."]
-scale = Vector2( 1, 0.75 )
 z_index = 1
 texture = ExtResource( 4 )
 offset = Vector2( 0, 4 )
