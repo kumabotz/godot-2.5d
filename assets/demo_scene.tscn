@@ -25,16 +25,16 @@ extents = Vector3( 5, 0.5, 5 )
 [node name="Overlay" parent="." instance=ExtResource( 1 )]
 
 [node name="Player25D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, 0 )
 z_index = -3952
 
 [node name="Shadow25D" parent="." instance=ExtResource( 3 )]
 visible = true
-position = Vector2( 0, 15.936 )
+position = Vector2( 0, 0 )
 z_index = -3958
 spatial_position = Vector3( 3.13315e-08, -0.498, 3.13315e-08 )
 
 [node name="Platform0" type="Node2D" parent="."]
-position = Vector2( -221.702, -288 )
 z_index = -3954
 script = ExtResource( 4 )
 __meta__ = {
@@ -59,7 +59,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform1" type="Node2D" parent="."]
-position = Vector2( 55.4256, -448 )
 z_index = -3956
 script = ExtResource( 4 )
 __meta__ = {
@@ -84,7 +83,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform2" type="Node2D" parent="."]
-position = Vector2( 0, 32 )
 z_index = -3962
 script = ExtResource( 4 )
 __meta__ = {
@@ -109,7 +107,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform3" type="Node2D" parent="."]
-position = Vector2( 277.128, 192 )
 z_index = -3960
 script = ExtResource( 4 )
 __meta__ = {
@@ -134,7 +131,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform4" type="Node2D" parent="."]
-position = Vector2( 277.128, -128 )
 z_index = -3966
 script = ExtResource( 4 )
 __meta__ = {
@@ -159,7 +155,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform5" type="Node2D" parent="."]
-position = Vector2( 554.256, 160 )
 z_index = -3984
 script = ExtResource( 4 )
 __meta__ = {
@@ -184,7 +179,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform6" type="Node2D" parent="."]
-position = Vector2( 277.128, 320 )
 z_index = -3982
 script = ExtResource( 4 )
 __meta__ = {
@@ -209,7 +203,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform7" type="Node2D" parent="."]
-position = Vector2( 0, 480 )
 z_index = -3978
 script = ExtResource( 4 )
 __meta__ = {
@@ -234,7 +227,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform20" type="Node2D" parent="."]
-position = Vector2( -277.128, 640 )
 z_index = -3976
 script = ExtResource( 4 )
 __meta__ = {
@@ -259,7 +251,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform21" type="Node2D" parent="."]
-position = Vector2( -554.256, 800 )
 z_index = -3972
 script = ExtResource( 4 )
 __meta__ = {
@@ -284,7 +275,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform22" type="Node2D" parent="."]
-position = Vector2( -831.384, 960 )
 z_index = -3970
 script = ExtResource( 4 )
 __meta__ = {
@@ -309,7 +299,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform9" type="Node2D" parent="."]
-position = Vector2( 277.128, 640 )
 z_index = -3974
 script = ExtResource( 4 )
 __meta__ = {
@@ -334,7 +323,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform10" type="Node2D" parent="."]
-position = Vector2( 692.82, 816 )
 z_index = -3994
 script = ExtResource( 4 )
 __meta__ = {
@@ -359,7 +347,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform11" type="Node2D" parent="."]
-position = Vector2( 415.692, 976 )
 z_index = -3992
 script = ExtResource( 4 )
 __meta__ = {
@@ -384,7 +371,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform12" type="Node2D" parent="."]
-position = Vector2( 138.564, 1136 )
 z_index = -3988
 script = ExtResource( 4 )
 __meta__ = {
@@ -409,7 +395,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform13" type="Node2D" parent="."]
-position = Vector2( -138.564, 976 )
 z_index = -3990
 script = ExtResource( 4 )
 __meta__ = {
@@ -434,7 +419,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform14" type="Node2D" parent="."]
-position = Vector2( -415.692, 816 )
 z_index = -3996
 script = ExtResource( 4 )
 __meta__ = {
@@ -459,7 +443,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform15" type="Node2D" parent="."]
-position = Vector2( -692.82, 656 )
 z_index = -3998
 script = ExtResource( 4 )
 __meta__ = {
@@ -484,7 +467,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform23" type="Node2D" parent="."]
-position = Vector2( -969.948, 496 )
 z_index = -4000
 script = ExtResource( 4 )
 __meta__ = {
@@ -509,7 +491,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform16" type="Node2D" parent="."]
-position = Vector2( -831.384, 320 )
 z_index = -3980
 script = ExtResource( 4 )
 __meta__ = {
@@ -534,7 +515,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform19" type="Node2D" parent="."]
-position = Vector2( -554.256, 160 )
 z_index = -3986
 script = ExtResource( 4 )
 __meta__ = {
@@ -559,7 +539,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform17" type="Node2D" parent="."]
-position = Vector2( -692.82, -48 )
 z_index = -3964
 script = ExtResource( 4 )
 __meta__ = {
@@ -584,7 +563,6 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Platform18" type="Node2D" parent="."]
-position = Vector2( -415.692, -208 )
 z_index = -3968
 script = ExtResource( 4 )
 __meta__ = {

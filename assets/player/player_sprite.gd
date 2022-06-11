@@ -16,12 +16,10 @@ func _ready():
 	_parent_node25d = get_parent()
 	_parent_math = _parent_node25d.get_child(0)
 
-
 func _process(delta):
 	if Engine.is_editor_hint():
 		return # Don't run this in the editor.
 
-	_sprite_basis()
 	var movement = _check_movement() # Always run to get direction, but don't always use return bool.
 
 	# Test-only move and collide, check if the player is on the ground.
@@ -45,46 +43,6 @@ func _process(delta):
 		_progress = 0
 		var jumping = 1 if _parent_math.vertical_speed < 0 else 0
 		frame = _direction * 2 + jumping
-
-
-func set_view_mode(view_mode_index):
-	match view_mode_index:
-		0: # 45 Degrees
-			transform.x = Vector2(1, 0)
-			transform.y = Vector2(0, 0.75)
-		1: # Isometric
-			transform.x = Vector2(1, 0)
-			transform.y = Vector2(0, 1)
-		2: # Top Down
-			transform.x = Vector2(1, 0)
-			transform.y = Vector2(0, 0.5)
-		3: # Front Side
-			transform.x = Vector2(1, 0)
-			transform.y = Vector2(0, 1)
-		4: # Oblique Y
-			transform.x = Vector2(1, 0)
-			transform.y = Vector2(0.75, 0.75)
-		5: # Oblique Z
-			transform.x = Vector2(1, 0.25)
-			transform.y = Vector2(0, 1)
-
-
-# Change the 2D basis of the sprite to try and make it "fit" multiple view modes.
-func _sprite_basis():
-	if not Engine.editor_hint:
-		if Input.is_action_pressed("forty_five_mode"):
-			set_view_mode(0)
-		elif Input.is_action_pressed("isometric_mode"):
-			set_view_mode(1)
-		elif Input.is_action_pressed("top_down_mode"):
-			set_view_mode(2)
-		elif Input.is_action_pressed("front_side_mode"):
-			set_view_mode(3)
-		elif Input.is_action_pressed("oblique_y_mode"):
-			set_view_mode(4)
-		elif Input.is_action_pressed("oblique_z_mode"):
-			set_view_mode(5)
-
 
 # This method returns a bool but if true it also outputs to the direction variable.
 func _check_movement() -> bool:

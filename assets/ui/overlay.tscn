@@ -11,17 +11,13 @@ script = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="ControlHints"]
 margin_left = 416.0
-margin_top = 25.0
+margin_top = 59.0
 margin_right = 1183.0
-margin_bottom = 175.0
+margin_bottom = 141.0
 rect_min_size = Vector2( 500, 50 )
 text = "
 Controls: WASD to move,  Space to jump,  R to reset,  Shift to walk, Tab to toggle hints.
 
-UIOJKL to change view mode.  U = Forty Five deg,   I = Isometric,
-O = Top Down,   J = Front Side,   K = Oblique Y,   L = Oblique Z
-
-Not every view mode is meant to be good, it's just to showcase what the system can do.
 In actual games, shadows, resizing, parallax, and other hints of depth could be added to make the world seem more 3D.
 "
 align = 1
