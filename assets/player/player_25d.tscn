@@ -10,23 +10,22 @@
 extents = Vector3( 0.5, 1, 0.5 )
 
 [node name="Player25D" type="Node2D"]
-position = Vector2( 0, -320 )
+position = Vector2( 124.708, 1096 )
 z_index = 100
 script = ExtResource( 1 )
 __meta__ = {
 "_editor_icon": ExtResource( 2 )
 }
-spatial_position = Vector3( 0, 10, 0 )
+spatial_position = Vector3( 28, -8.5, 23.5 )
 
 [node name="PlayerMath25D" type="KinematicBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -8.5, 23.5 )
 script = ExtResource( 3 )
+speed = 2000
+respawn_position = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -8.5, 23.5 )
 
 [node name="CollisionShape" type="CollisionShape" parent="PlayerMath25D"]
 shape = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="PlayerSprite" type="Sprite" parent="."]
 z_index = 1

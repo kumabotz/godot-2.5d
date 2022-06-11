@@ -25,17 +25,17 @@ extents = Vector3( 5, 0.5, 5 )
 [node name="Overlay" parent="." instance=ExtResource( 1 )]
 
 [node name="Player25D" parent="." instance=ExtResource( 2 )]
-z_index = -3952
+z_index = -3940
 
 [node name="Shadow25D" parent="." instance=ExtResource( 3 )]
 visible = true
 position = Vector2( 0, 15.936 )
-z_index = -3958
+z_index = -3946
 spatial_position = Vector3( 3.13315e-08, -0.498, 3.13315e-08 )
 
 [node name="Platform0" type="Node2D" parent="."]
 position = Vector2( -221.702, -288 )
-z_index = -3954
+z_index = -3942
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -60,7 +60,7 @@ script = ExtResource( 7 )
 
 [node name="Platform1" type="Node2D" parent="."]
 position = Vector2( 55.4256, -448 )
-z_index = -3956
+z_index = -3944
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -85,7 +85,7 @@ script = ExtResource( 7 )
 
 [node name="Platform2" type="Node2D" parent="."]
 position = Vector2( 0, 32 )
-z_index = -3962
+z_index = -3950
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -110,7 +110,7 @@ script = ExtResource( 7 )
 
 [node name="Platform3" type="Node2D" parent="."]
 position = Vector2( 277.128, 192 )
-z_index = -3960
+z_index = -3948
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -135,7 +135,7 @@ script = ExtResource( 7 )
 
 [node name="Platform4" type="Node2D" parent="."]
 position = Vector2( 277.128, -128 )
-z_index = -3966
+z_index = -3954
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -160,7 +160,7 @@ script = ExtResource( 7 )
 
 [node name="Platform5" type="Node2D" parent="."]
 position = Vector2( 554.256, 160 )
-z_index = -3984
+z_index = -3974
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -185,7 +185,7 @@ script = ExtResource( 7 )
 
 [node name="Platform6" type="Node2D" parent="."]
 position = Vector2( 277.128, 320 )
-z_index = -3982
+z_index = -3970
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -210,7 +210,7 @@ script = ExtResource( 7 )
 
 [node name="Platform7" type="Node2D" parent="."]
 position = Vector2( 0, 480 )
-z_index = -3978
+z_index = -3966
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -235,7 +235,7 @@ script = ExtResource( 7 )
 
 [node name="Platform20" type="Node2D" parent="."]
 position = Vector2( -277.128, 640 )
-z_index = -3976
+z_index = -3964
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -260,7 +260,7 @@ script = ExtResource( 7 )
 
 [node name="Platform21" type="Node2D" parent="."]
 position = Vector2( -554.256, 800 )
-z_index = -3972
+z_index = -3960
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -285,7 +285,7 @@ script = ExtResource( 7 )
 
 [node name="Platform22" type="Node2D" parent="."]
 position = Vector2( -831.384, 960 )
-z_index = -3970
+z_index = -3958
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -310,7 +310,7 @@ script = ExtResource( 7 )
 
 [node name="Platform9" type="Node2D" parent="."]
 position = Vector2( 277.128, 640 )
-z_index = -3974
+z_index = -3962
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -333,9 +333,70 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
+[node name="Platform24" type="Node2D" parent="."]
+position = Vector2( 969.948, 629.536 )
+scale = Vector2( 1, 0.992216 )
+z_index = -3986
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_icon": ExtResource( 5 )
+}
+spatial_position = Vector3( 27.75, -9.423, -7.25 )
+
+[node name="PlatformMath" type="StaticBody" parent="Platform24"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.75, -9.423, -7.25 )
+collision_layer = 1048575
+collision_mask = 1048575
+
+[node name="CollisionShape" type="CollisionShape" parent="Platform24/PlatformMath"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Platform25" type="Node2D" parent="."]
+position = Vector2( 968.507, 936.832 )
+z_index = -3978
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_icon": ExtResource( 5 )
+}
+spatial_position = Vector3( 38.75, -8, 3.802 )
+
+[node name="PlatformMath" type="StaticBody" parent="Platform25"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.75, -8, 3.802 )
+collision_layer = 1048575
+collision_mask = 1048575
+
+[node name="CollisionShape" type="CollisionShape" parent="Platform25/PlatformMath"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Platform26" type="Node2D" parent="."]
+position = Vector2( 1247.1, 752.368 )
+z_index = -3976
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_icon": ExtResource( 5 )
+}
+spatial_position = Vector3( 38.262, -7.75, -6.739 )
+
+[node name="PlatformMath" type="StaticBody" parent="Platform26"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.262, -7.75, -6.739 )
+collision_layer = 1048575
+collision_mask = 1048575
+
+[node name="CollisionShape" type="CollisionShape" parent="Platform26/PlatformMath"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Platform10" type="Node2D" parent="."]
 position = Vector2( 692.82, 816 )
-z_index = -3994
+z_index = -3996
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -408,6 +469,81 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
+[node name="PlatformNew1" type="Node2D" parent="."]
+position = Vector2( 138.564, 792 )
+z_index = -3984
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_icon": ExtResource( 5 )
+}
+spatial_position = Vector3( 18, -9.25, 13 )
+
+[node name="PlatformMath" type="StaticBody" parent="PlatformNew1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -9.25, 13 )
+collision_layer = 1048575
+collision_mask = 1048575
+
+[node name="CollisionShape" type="CollisionShape" parent="PlatformNew1/PlatformMath"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlatformSprite" type="Sprite" parent="PlatformNew1"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+script = ExtResource( 7 )
+
+[node name="PlatformNew2" type="Node2D" parent="."]
+position = Vector2( -436.477, 1100 )
+z_index = -3982
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_icon": ExtResource( 5 )
+}
+spatial_position = Vector3( 18, -8.5, 33.75 )
+
+[node name="PlatformMath" type="StaticBody" parent="PlatformNew2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -8.5, 33.75 )
+collision_layer = 1048575
+collision_mask = 1048575
+
+[node name="CollisionShape" type="CollisionShape" parent="PlatformNew2/PlatformMath"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlatformSprite" type="Sprite" parent="PlatformNew2"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+script = ExtResource( 7 )
+
+[node name="PlatformNew3" type="Node2D" parent="."]
+position = Vector2( -436.477, 1100 )
+z_index = -3980
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_icon": ExtResource( 5 )
+}
+spatial_position = Vector3( 18, -8.5, 33.75 )
+
+[node name="PlatformMath" type="StaticBody" parent="PlatformNew3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -8.5, 33.75 )
+collision_layer = 1048575
+collision_mask = 1048575
+
+[node name="CollisionShape" type="CollisionShape" parent="PlatformNew3/PlatformMath"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlatformSprite" type="Sprite" parent="PlatformNew3"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+script = ExtResource( 7 )
+
 [node name="Platform13" type="Node2D" parent="."]
 position = Vector2( -138.564, 976 )
 z_index = -3990
@@ -435,7 +571,7 @@ script = ExtResource( 7 )
 
 [node name="Platform14" type="Node2D" parent="."]
 position = Vector2( -415.692, 816 )
-z_index = -3996
+z_index = -3994
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -510,7 +646,7 @@ script = ExtResource( 7 )
 
 [node name="Platform16" type="Node2D" parent="."]
 position = Vector2( -831.384, 320 )
-z_index = -3980
+z_index = -3968
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -535,7 +671,7 @@ script = ExtResource( 7 )
 
 [node name="Platform19" type="Node2D" parent="."]
 position = Vector2( -554.256, 160 )
-z_index = -3986
+z_index = -3972
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -560,7 +696,7 @@ script = ExtResource( 7 )
 
 [node name="Platform17" type="Node2D" parent="."]
 position = Vector2( -692.82, -48 )
-z_index = -3964
+z_index = -3952
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )
@@ -585,7 +721,7 @@ script = ExtResource( 7 )
 
 [node name="Platform18" type="Node2D" parent="."]
 position = Vector2( -415.692, -208 )
-z_index = -3968
+z_index = -3956
 script = ExtResource( 4 )
 __meta__ = {
 "_editor_icon": ExtResource( 5 )

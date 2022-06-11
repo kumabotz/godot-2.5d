@@ -4,13 +4,15 @@ class_name PlayerMath25D # No icon necessary
 
 var vertical_speed := 0.0
 onready var _parent_node25d: Node25D = get_parent()
+export var speed = 1200
+export(Transform) var respawn_position
 
 func _process(delta):
 	if Input.is_action_pressed("exit"):
 		get_tree().quit()
 
 	if Input.is_action_just_pressed("reset_position"):
-		transform = Transform(Basis(), Vector3.UP * 10)
+		transform = respawn_position
 		vertical_speed = 0
 	else:
 		_horizontal_movement(delta)
@@ -30,7 +32,7 @@ func _horizontal_movement(delta):
 	var movement_vec2 = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	var move_dir = localX * movement_vec2.x + localZ * movement_vec2.y
 
-	move_dir = move_dir * delta * 600
+	move_dir = move_dir * delta * speed
 	if Input.is_action_pressed("movement_modifier"):
 		move_dir /= 2
 
@@ -47,3 +49,5 @@ func _vertical_movement(delta):
 	var k = move_and_collide(localY * vertical_speed)
 	if k != null:
 		vertical_speed = 0
+
+var ___orig_reset_transform_pos = Transform(Basis(), Vector3.UP * 10)
